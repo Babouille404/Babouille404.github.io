@@ -1,0 +1,75 @@
+body {
+    max-height: 100%;
+    max-width: 1800px;
+    overflow-x: hidden;
+}
+
+.hero {
+    width: 189vh;
+    height: 98vh;
+    background-image: linear-gradient(black, black 50%, black 50%, black 50%);
+    position: relative;
+    padding : 0 5%;
+    align-items: center;
+    display : flex;
+    justify-content: center;
+    z-index : 1;
+}
+
+nav {
+    width: 100%;
+    position : absolute;
+    top: 0;
+    left : 400px;
+    padding : 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fdeb37;
+    font-size: 17px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 100px;
+    color : #fdeb37;
+    font-weight : 600;
+    font-family:  Arial, Helvetica  , sans-serif;
+    font-style: italic;
+}
+
+.back-video {
+    position: absolute;
+    z-index: -1;
+
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 189vh;
+        height: 98vh;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: 189vh;
+        height: 98vh;
+    }
+}
